@@ -1,0 +1,4 @@
+add_executable(test_crosswindow test_crosswindow.cpp)
+target_link_libraries(test_crosswindow PRIVATE CrossWindow)
+
+add_test(NAME CrossWindowTests COMMAND test_crosswindow)
